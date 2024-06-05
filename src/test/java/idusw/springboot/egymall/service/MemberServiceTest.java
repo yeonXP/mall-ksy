@@ -32,7 +32,7 @@ public class MemberServiceTest {
                 .idx(6L)
                 .build();
         MemberDto ret;
-        if((ret = memberService.readById(dto.getIdx())) != null)
+        if((ret = memberService.readByIdx(dto.getIdx())) != null)
             System.out.println("success" + ret );
         else
             System.out.println("fail");
